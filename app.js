@@ -23,32 +23,32 @@ function juego (playerChoice) {
         setTimeout (function () {document.getElementById(playerChoice).classList.remove("empate")}, 500);
         empataste();
     } else if (playerChoice === "piedra" && compuChoice === "papel") {
-        detalle.innerHTML = "Mi " + compuChoice + " mata tú asquerosa " + playerChoice;
+        detalle.innerHTML = "Mi " + compuChoice + " mata tu asquerosa " + playerChoice;
         document.getElementById(playerChoice).classList.add("incorrecto");
         setTimeout (function () {document.getElementById(playerChoice).classList.remove("incorrecto")}, 500);
         perdiste ();
     } else if (playerChoice === "piedra" && compuChoice === "tijera") {
-        detalle.innerHTML = "Tú asquerosa " + playerChoice + " mata mi bella " + compuChoice;
+        detalle.innerHTML = "Tu asquerosa " + playerChoice + " mata mi bella " + compuChoice;
         document.getElementById(playerChoice).classList.add("correcto");
         setTimeout (function () {document.getElementById(playerChoice).classList.remove("correcto")}, 500);
         ganaste ();
     } else if (playerChoice === "papel" && compuChoice === "tijera") {
-        detalle.innerHTML = "Mi útil " + compuChoice + " mata tú triste " + playerChoice;
+        detalle.innerHTML = "Mi útil " + compuChoice + " mata tu triste " + playerChoice;
         document.getElementById(playerChoice).classList.add("incorrecto");
         setTimeout (function () {document.getElementById(playerChoice).classList.remove("incorrecto")}, 500);
         perdiste ();
     } else if (playerChoice === "papel" && compuChoice === "piedra") {
-        detalle.innerHTML = "Tú mugroso " + playerChoice + " mata mi bella " + compuChoice;
+        detalle.innerHTML = "Tu mugroso " + playerChoice + " mata mi bella " + compuChoice;
         document.getElementById(playerChoice).classList.add("correcto");
         setTimeout (function () {document.getElementById(playerChoice).classList.remove("correcto")}, 500);
         ganaste ();
     } else if (playerChoice === "tijera" && compuChoice === "piedra") {
-        detalle.innerHTML = "Mi hermosa " + compuChoice + " mata tú triste " + playerChoice;
+        detalle.innerHTML = "Mi hermosa " + compuChoice + " mata tu triste " + playerChoice;
         document.getElementById(playerChoice).classList.add("incorrecto");
         setTimeout (function () {document.getElementById(playerChoice).classList.remove("incorrecto")}, 500);
         perdiste ();
     } else if (playerChoice === "tijera" && compuChoice === "papel") {
-        detalle.innerHTML = "Tú sucia " + playerChoice + " mata mi perfecto " + compuChoice;
+        detalle.innerHTML = "Tu sucia " + playerChoice + " mata mi perfecto " + compuChoice;
         document.getElementById(playerChoice).classList.add("correcto");
         setTimeout (function () {document.getElementById(playerChoice).classList.remove("correcto")}, 500);
         ganaste ();

@@ -87,7 +87,8 @@ header h1 {
 
 #resultadoFinal h5 {
     font-weight: 200;
-    font-size: 15px;
+    font-size: 25px;
+    margin: 25px;
 }
 
 .correcto {
@@ -137,7 +138,8 @@ header h1 {
     position: relative;
     background-color: whitesmoke;
     margin: auto;
-    width: 30%;
+    width: 90%;
+    max-width: 500px;
     box-shadow: 00 6px 0 black;
     animation-name: modal;
     animation-duration: 1s;
