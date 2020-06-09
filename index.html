@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Piedra, Papel, o Tijera</title>
+</head>
+<body>
+    <div id="miModal" class="modal">
+        <div id="flex" class="flex">
+            <div class="contenidoModal">
+                <h4>Bienvenido a Piedra, Papel, o Tijera</h4>
+                <input id="nombre" class="inputNombre" type="text" placeholder="Ingresá tu nombre">
+                <button type="button" class="button" id="boton">Jugar!</button>
+            </div>
+        </div>
+    </div>
+    <header>
+        <h1>Piedra, Papel, o Tijera?</h1>
+    </header>
+    <div class="puntajes">
+        <p id="jugador">player</p>
+        <div id="tablero">
+            <span id="puntosPlayer">0</span>:<span id="puntosCompu">0</span>
+        </div>
+        <p>Compu</p>
+    </div>
+    <div id="resultadoFinal">
+        <h1 id="resultado">Resultado</h1>
+        <h3 id="detalle">listos?</h3>
+        <h5 id="mensaje">A jugar!</h5>
+    </div>
+    <div id="choices">
+        <img id="piedra" class="choice" src="piedra.png" alt="">
+        <img id="papel" class="choice" src="papel.png" alt="">
+        <img id="tijera" class="choice" src="tijera.png" alt="">
+    </div>
+    <script src="modal.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,181 @@
+body {
+    font-family: sans-serif;
+    background-color: darkslategray;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+header {
+    background-color: white;
+    text-align: center;
+    margin: 0;
+    padding: 30px;
+    color: black;
+}
+
+header h1 {
+    margin: 0;
+}
+
+.puntajes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 30px;
+    font-family: 'Orbitron', sans-serif;
+    background-color: rgba(140, 226, 200, 0.329);
+    padding: 10px;
+}
+
+#tablero {
+    justify-self: center;
+}
+
+.puntajes span {
+    font-size: 30px;
+    margin: 5px;
+}
+
+.puntajes p {
+    margin: 0;
+    justify-self: center;
+    font-size: 30px;
+}
+
+
+
+#saludo {
+    text-align: center;
+    margin: 15px;
+}
+
+#saludo h2 {
+    font-weight: 400;
+    font-size: large;
+}
+
+#choices {
+    margin: 50px 0;
+    text-align: center;
+}
+
+.choice {
+    border: 4px solid black;
+    background-color: white;
+    width: 20vh;
+    border-radius: 50%;
+    padding: 10px;
+    margin: 15px;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+#choices .choice:hover {
+    transform: scale(1.1);
+}
+
+#resultadoFinal {
+    text-align: center;
+    margin: 0;
+    padding: 30px;
+    background-color: rgba(140, 226, 200, 0.329);
+}
+
+#resultadoFinal h1 {
+    font-size: 40px;
+}
+
+#resultadoFinal h5 {
+    font-weight: 200;
+    font-size: 15px;
+}
+
+.correcto {
+    border: 4px solid greenyellow;
+    box-shadow: 0 0 10px greenyellow;
+}
+
+.correcto2 {
+    color: greenyellow;
+}
+
+.incorrecto {
+    border: 4px solid rgb(168, 33, 33);
+    box-shadow: 0 0 10px rgb(168, 33, 33);
+}
+
+.incorrecto2 {
+    color: rgb(168, 33, 33);
+}
+
+.empate {
+    border: 4px solid rgb(95, 95, 95);
+    box-shadow: 0 0 10px rgb(95, 95, 95);
+}
+
+.flex {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal {
+    position: fixed;
+    z-index: 10;
+    overflow: auto;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.800);
+    color: black;
+}
+
+.contenidoModal {
+    position: relative;
+    background-color: whitesmoke;
+    margin: auto;
+    width: 30%;
+    box-shadow: 00 6px 0 black;
+    animation-name: modal;
+    animation-duration: 1s;
+}
+
+@keyframes modal {
+    from{top: -33px; opacity: 0;}
+    to{top: 0; opacity: 1;}
+}
+
+h4 {
+    text-align: center;
+    font-size: 20px;
+}
+
+.inputNombre {
+    display: block;
+    margin: 15px auto;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 2px solid green;
+}
+
+.button {
+    display: block;
+    margin: 15px auto;
+    padding: 8px;
+    background-color: white;
+    color: teal;
+    border: 1px solid teal;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: teal;
+    color: white;
+}
+
+p {
+  text-transform: capitalize;
+}
